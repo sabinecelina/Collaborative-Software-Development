@@ -9,13 +9,13 @@
 <maven.compiler.target>1.8</maven.compiler.target>
 </properties>
 <dependencies>
-<dependency>
-<groupId>junit</groupId>
-<artifactId>junit</artifactId>
-<version>4.12</version>
-<scope>test</scope>
-</dependency>
-<!--  für das Praktikum "Integrationstest" -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+    <!--  fï¿½r das Praktikum "Integrationstest" -->
 <!-- dependency>
       <groupId>org.easymock</groupId>
       <artifactId>easymock</artifactId>
@@ -37,7 +37,7 @@
 <plugin>
 <artifactId>maven-surefire-report-plugin</artifactId>
 </plugin>
-<!--  für das Praktikum "Integrationstest" -->
+<!--  fï¿½r das Praktikum "Integrationstest" -->
 <!-- plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -47,7 +47,7 @@
 </reporting>
 <build>
 <plugins>
-<!--  für das Praktikum "Build Management" -->
+<!--  fï¿½r das Praktikum "Build Management" -->
 <plugin>
 <groupId>org.apache.maven.plugins</groupId>
 <artifactId>maven-jar-plugin</artifactId>
@@ -60,7 +60,7 @@
 </archive>
 </configuration>
 </plugin>
-<!--  für das Praktikum "Integrationstest" -->
+<!--  fï¿½r das Praktikum "Integrationstest" -->
 <!-- plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
