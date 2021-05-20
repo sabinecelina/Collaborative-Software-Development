@@ -46,8 +46,6 @@ public class ResidentMockTest {
     public void getFilteredResidentsTest() {
         ResidentRepository residentRespository = createMock(ResidentRepository.class);
         baseresidentService.setResidentRepository(residentRespository);
-        Resident testResidentName = new Resident("D*", "*", "M*", "F", null);
-        List<Resident> filteredList = baseresidentService.getFilteredResidentsList(testResidentName);
         expect(residentRespository.getResidents()).andStubReturn(residents);
         replay(residentRespository);
         baseresidentService.setResidentRepository(residentRespository);
