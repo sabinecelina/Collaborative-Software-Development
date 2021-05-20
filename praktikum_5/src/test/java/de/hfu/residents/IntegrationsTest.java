@@ -36,6 +36,7 @@ public class IntegrationsTest {
         repositoryStub.addResident(muenster);
         repositoryStub.addResident(mustermann);
         repositoryStub.addResident(hejer);
+        repositoryStub.addResident(mueller_turgau);
         baseresidentService.setResidentRepository(repositoryStub);
     }
     @Test
@@ -53,14 +54,14 @@ public class IntegrationsTest {
 
         Resident oneResident = new Resident ("*", "*", "Maxstr.*", "*", null );
         List<Resident> filteredMList = baseresidentService.getFilteredResidentsList(oneResident);
-        assertThat(filteredMList.get(0).getGivenName(), equalTo("Daniel"));
+        assertThat(filteredMList.get(0).getGivenName(), equalTo("Erich"));
         assertThat(filteredMList.get(1).getGivenName(), equalTo("Max"));
         assertThat(filteredMList.size(), equalTo(2));
 
         Resident testFullResidentList = new Resident("*", "*", "*", "*", null );
         List<Resident> filteredAll = baseresidentService.getFilteredResidentsList(testFullResidentList);
         int allResidents = filteredAll.size();
-        assertEquals(allResidents, 4);
+        assertEquals(allResidents, 5);
         @SuppressWarnings("deprecation")
         Resident testDateResident = new Resident("*", "*", "*", "*", new Date(1980, Calendar.APRIL, 5));
         List<Resident> filteredDateList = baseresidentService.getFilteredResidentsList(testDateResident);
