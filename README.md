@@ -1,4 +1,4 @@
-# MSoftware Development in Teams with Open Source Tools
+# Software Development in Teams with Open Source Tools
 
 In the 6th semester, I joined a class on a collaborative software development project using open-source tools. The course emphasized teamwork and covered advanced topics in software development, including:
 
